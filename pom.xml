@@ -35,4 +35,19 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>${repo.id}</id>
+      <name>Nexus Release Repository</name>
+      <url>${repo.releases.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>${repo.id}</id>
+      <name>Nexus Snapshot Repository</name>
+      <url>${repo.snapshots.url}</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
+
 </project>
